@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: 602px;
+    position: relative;
+  }
+  
+  .drink {
+    position: absolute;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    width: 400px;
+    height: 600px;
+    top: 0;
+  }
+  
+  .goBack, .goForward {
+    border-radius: 50%;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .featured {
+    transform: translateX(0);
+  }
+  
+  .next {
+    transform: translateX(410px);
+    filter: blur(5px);
+  }
+  
+  .prev {
+    transform: translateX(-410px);
+    filter: blur(5px);
+  }
+  
+  .twoNext {
+    transform: translateX(820px);
+    filter: blur(10px);
+  }
+  
+  .twoFrom {
+    transform: translateX(-820px);
+    filter: blur(10px);
+  }
